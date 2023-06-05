@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background-color: #084b81;
+    min-height: 18vh;
+
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+
+header h1::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    width: 30%;
+    height: 1px;
+    background-color: white;
+}
+
+header p {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+section {
+    padding: 30px 80px;
+    position: relative;
+
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    width: 26%;
+    height: 3px;
+    background-color: #e3d7da;
+}
+
+section h2 {
+    color: #084b81;
+}
+
+section p {
+    padding: 10px 0;
+    color: #231f20;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.qualification {
+    padding: 5px 0;
+    position: relative;
+}
+
+.qualification::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: .5px;
+    background-color: #e3d7da;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: 300;
+}
+
+p a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width:500px) {
+    section {
+        padding: 25px 40px;
+        position: relative;
+
+    }
+
+    ul {
+        display: block;
+    }
+
+    section::after {
+        content: '';
+        position: absolute;
+        top: 5%;
+        left: 6%;
+        width: 30%;
+        height: 3px;
+        background-color: #e3d7da;
+    }
+}
